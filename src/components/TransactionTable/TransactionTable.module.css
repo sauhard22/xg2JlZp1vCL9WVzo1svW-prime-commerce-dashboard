@@ -1,0 +1,220 @@
+.wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  color: #263b58;
+}
+
+.table thead th {
+  background: var(--head-bg);
+  color: #566a85;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-align: left;
+  padding: 0 18px;
+  height: 54px;
+  white-space: nowrap;
+}
+
+.table thead th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.table thead th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.table tbody td {
+  padding: 15px 18px 20px;
+  border-bottom: 1px solid var(--row-line);
+  vertical-align: top;
+}
+
+.table tbody tr:hover td {
+  background: #fafcff;
+}
+
+.transaction_id {
+  width: 18%;
+  white-space: nowrap;
+}
+
+.product_name {
+  width: 22%;
+}
+
+.region {
+  width: 13%;
+}
+
+.net_amount_inr {
+  width: 16%;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  width: 16%;
+}
+
+.order_date {
+  width: 15%;
+  white-space: nowrap;
+}
+
+.sortButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 -6px;
+  padding: 6px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+.sortButton:hover {
+  color: var(--blue);
+}
+
+.sortIcon {
+  width: 9px;
+  height: 13px;
+}
+
+.up,
+.down {
+  fill: #b3c0d1;
+}
+
+.sortIcon[data-dir='asc'] .up,
+.sortIcon[data-dir='desc'] .down {
+  fill: var(--blue);
+}
+
+.badge {
+  display: inline-block;
+}
+
+.badgeCompleted {
+  color: #087a5b;
+}
+
+.badgeRefunded {
+  color: #b45309;
+}
+
+.badgeCancelled {
+  color: #b42318;
+}
+
+.badgeProcessing {
+  color: #1d4ed8;
+}
+
+@media (max-width: 1100px) {
+  .table thead th,
+  .table tbody td {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Narrow screens: each row becomes a card, header row hidden (sorting via the Sort dropdown). */
+@media (max-width: 767px) {
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+  }
+
+  .table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .table tbody tr {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      'id id amount'
+      'product region status'
+      'date date date';
+    column-gap: 4px;
+    row-gap: 5px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--row-line);
+  }
+
+  .table tbody tr:hover td {
+    background: none;
+  }
+
+  .table tbody td {
+    width: auto;
+    padding: 0;
+    border: 0;
+  }
+
+  .transaction_id {
+    grid-area: id;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .net_amount_inr {
+    grid-area: amount;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: right;
+  }
+
+  .product_name,
+  .region {
+    color: #5f7390;
+    font-size: 13px;
+  }
+
+  .product_name {
+    grid-area: product;
+  }
+
+  /* Region sits on the product line: "Wireless Mouse · West". */
+  .region {
+    grid-area: region;
+  }
+
+  .region::before {
+    content: '· ';
+  }
+
+  .status {
+    grid-area: status;
+    font-size: 13px;
+    text-align: right;
+    padding-left: 8px !important;
+  }
+
+  .order_date {
+    grid-area: date;
+    color: #5f7390;
+    font-size: 12px;
+  }
+}

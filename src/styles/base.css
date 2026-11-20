@@ -1,0 +1,75 @@
+:root {
+  --navy: #142440;
+  --text: #183052;
+  --text-muted: #55677f;
+  --blue: #2563eb;
+  --blue-active: #2859a9;
+  --surface: #f4f7fc;
+  --field: #f5f7fc;
+  --green: #0b9d75;
+  --border: #dee6f0;
+  --row-line: #edf1f6;
+  --head-bg: #f1f5fa;
+  --white: #ffffff;
+  --radius-card: 16px;
+  --radius-field: 9px;
+  --focus: 0 0 0 3px rgba(37, 99, 235, 0.45);
+
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--surface);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--surface);
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 10;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 12px;
+}

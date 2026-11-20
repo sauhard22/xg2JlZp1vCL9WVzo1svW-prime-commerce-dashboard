@@ -1,0 +1,20 @@
+test_id,scenario,expected,actual_result,evidence,status
+QA-01,Initial load,120 transactions available and computed KPIs,"""Showing 1–10 of 120 transactions""; cards show ₹ 1,10,680 / 60 / ₹ 1,845 / 20, matching the independent Python calculation",qa/chrome_1440px.jpg; qa/expected_values_python.txt; unit test 'loads all 120 supplied rows',Pass
+QA-02,Case-insensitive search,txn ID matches regardless of casing,"Typed ""txn-25005"" → only TXN-25005 shown (1 of 120); unit test confirms upper and lower case give identical results",QA_REPORT.md §2; unit-test-output.txt,Pass
+QA-03,Search product,product name filters table,"Typed ""WIRELESS mouse"" → 13 rows, all Wireless Mouse (Python count: 13)",QA_REPORT.md §2,Pass
+QA-04,Search customer,customer reference filters table,"Typed ""Cust-1017"" → TXN-25088 and TXN-25001 (Python: same two)",QA_REPORT.md §2,Pass
+QA-05,Region filter,only selected region visible,"Region = East → 30 rows, only East; cards ₹ 26,570 / 20 / ₹ 1,329 / 0",QA_REPORT.md §2,Pass
+QA-06,Status filter,only selected status visible,"Status = Refunded → 20 rows, only Refunded; cards ₹ 0 / 0 / ₹ 0 / 20",QA_REPORT.md §2,Pass
+QA-07,Combined filters,search and dropdown constraints both apply,"""lamp"" + North + Completed → 3 rows (TXN-25072, TXN-25036, TXN-25108); cards ₹ 3,747 / 3 / ₹ 1,249 / 0 (Python: same)",QA_REPORT.md §2,Pass
+QA-08,Sort amount asc,amounts monotonically increase,"First page ₹ 499, 499, 524, 524, 524, 549 …; aria-sort=ascending; unit test checks all 120 rows",QA_REPORT.md §2; unit-test-output.txt,Pass
+QA-09,Sort amount desc,amounts monotonically decrease,"First page ₹ 3,897, 3,897, 3,872 …; aria-sort=descending; unit test checks all 120 rows",QA_REPORT.md §2; unit-test-output.txt,Pass
+QA-10,Sort date,date sort toggles direction,"Date header: descending (2026-11-12 first) → click → ascending (2026-09-01 first)",QA_REPORT.md §2,Pass
+QA-11,No results,clear empty-state shown,"""zzz-nothing"" → ""No transactions match your search. Clear filters to see all orders."" with a Clear filters button; cards show zero",qa/chrome_1440px_empty_state.jpg,Pass
+QA-12,Reset filters,all records restored,"Clear filters / Reset → search empty, region and status back to All, 120 rows, original KPIs",QA_REPORT.md §2,Pass
+QA-13,390px viewport,no horizontal page scroll,"Chrome (in-app, 390×844 emulation): scrollWidth 390 = innerWidth; table shown as row cards",qa/chrome_390px.jpg,Pass (Chrome only)
+QA-14,768px viewport,cards and table usable,"Chrome (in-app, 768×1024): scrollWidth 768, cards 2 columns, full table fits (no inner overflow)",qa/chrome_768px.jpg,Pass (Chrome only)
+QA-15,1440px viewport,matches desktop reference,"Chrome (in-app, 1440×1000): 244px sidebar, 4 cards in one row, table layout as reference",qa/chrome_1440px.jpg,Pass (Chrome only)
+QA-16,Keyboard access,filters and sortable headings operable,"Tab order: skip link → nav → Export → search → region → status → Transaction/Amount/Date headers → Next. Enter and Space toggle sort",QA_REPORT.md §2,Pass
+QA-17,Console clean,no warnings or errors,Chrome console empty on production preview at 390/768/1024/1440,QA_REPORT.md §2,Pass (Chrome only)
+QA-18,Production build,npm run build succeeds,vite 5.4.21 build: 52 modules; no warnings,qa/build-output.txt,Pass
+QA-19,Lighthouse performance,deployed performance score >=85,"Local preview only so far: Performance 100 (mobile) / 100 (desktop). Deployed-URL run still to do",qa/lighthouse_local_preview.report.html,Pending deployment

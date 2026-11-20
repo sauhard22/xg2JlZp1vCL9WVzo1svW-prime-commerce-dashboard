@@ -1,0 +1,121 @@
+transaction_id,order_date,product_id,product_name,category,region,channel,quantity,unit_price_inr,discount_inr,net_amount_inr,status,customer_ref
+TXN-25001,2026-09-04,PRD-108,Minimalist Wall Clock,Home,West,Mobile App,2,1499,25,2973,Refunded,CUST-1017
+TXN-25002,2026-09-07,PRD-107,USB-C Charger,Electronics,East,Marketplace,3,999,50,2947,Cancelled,CUST-1034
+TXN-25003,2026-09-10,PRD-106,Water Bottle 750ml,Lifestyle,South,Website,1,599,75,524,Processing,CUST-1051
+TXN-25004,2026-09-13,PRD-105,Planner Notebook,Stationery,North,Mobile App,2,349,100,598,Completed,CUST-1068
+TXN-25005,2026-09-16,PRD-104,Wireless Mouse,Electronics,West,Marketplace,3,799,0,2397,Completed,CUST-1085
+TXN-25006,2026-09-19,PRD-103,Steel Lunch Box,Kitchen,East,Website,1,899,25,874,Completed,CUST-1015
+TXN-25007,2026-09-22,PRD-102,Cotton Travel Tote,Lifestyle,South,Mobile App,2,699,50,1348,Refunded,CUST-1032
+TXN-25008,2026-09-25,PRD-101,Ceramic Desk Lamp,Home,North,Marketplace,3,1299,75,3822,Cancelled,CUST-1049
+TXN-25009,2026-09-28,PRD-101,Ceramic Desk Lamp,Home,West,Website,1,1299,100,1199,Processing,CUST-1066
+TXN-25010,2026-10-01,PRD-108,Minimalist Wall Clock,Home,East,Mobile App,2,1499,0,2998,Completed,CUST-1083
+TXN-25011,2026-10-04,PRD-107,USB-C Charger,Electronics,South,Marketplace,3,999,25,2972,Completed,CUST-1013
+TXN-25012,2026-10-07,PRD-106,Water Bottle 750ml,Lifestyle,North,Website,1,599,50,549,Completed,CUST-1030
+TXN-25013,2026-10-10,PRD-105,Planner Notebook,Stationery,West,Mobile App,2,349,75,623,Refunded,CUST-1047
+TXN-25014,2026-10-13,PRD-104,Wireless Mouse,Electronics,East,Marketplace,3,799,100,2297,Cancelled,CUST-1064
+TXN-25015,2026-10-16,PRD-103,Steel Lunch Box,Kitchen,South,Website,1,899,0,899,Processing,CUST-1081
+TXN-25016,2026-10-19,PRD-102,Cotton Travel Tote,Lifestyle,North,Mobile App,2,699,25,1373,Completed,CUST-1011
+TXN-25017,2026-10-22,PRD-101,Ceramic Desk Lamp,Home,West,Marketplace,3,1299,50,3847,Completed,CUST-1028
+TXN-25018,2026-10-25,PRD-101,Ceramic Desk Lamp,Home,East,Website,1,1299,75,1224,Completed,CUST-1045
+TXN-25019,2026-10-28,PRD-108,Minimalist Wall Clock,Home,South,Mobile App,2,1499,100,2898,Refunded,CUST-1062
+TXN-25020,2026-10-31,PRD-107,USB-C Charger,Electronics,North,Marketplace,3,999,0,2997,Cancelled,CUST-1079
+TXN-25021,2026-11-03,PRD-106,Water Bottle 750ml,Lifestyle,West,Website,1,599,25,574,Processing,CUST-1009
+TXN-25022,2026-11-06,PRD-105,Planner Notebook,Stationery,East,Mobile App,2,349,50,648,Completed,CUST-1026
+TXN-25023,2026-11-09,PRD-104,Wireless Mouse,Electronics,South,Marketplace,3,799,75,2322,Completed,CUST-1043
+TXN-25024,2026-11-12,PRD-103,Steel Lunch Box,Kitchen,North,Website,1,899,100,799,Completed,CUST-1060
+TXN-25025,2026-09-01,PRD-102,Cotton Travel Tote,Lifestyle,West,Mobile App,2,699,0,1398,Refunded,CUST-1077
+TXN-25026,2026-09-04,PRD-101,Ceramic Desk Lamp,Home,East,Marketplace,3,1299,25,3872,Cancelled,CUST-1007
+TXN-25027,2026-09-07,PRD-101,Ceramic Desk Lamp,Home,South,Website,1,1299,50,1249,Processing,CUST-1024
+TXN-25028,2026-09-10,PRD-108,Minimalist Wall Clock,Home,North,Mobile App,2,1499,75,2923,Completed,CUST-1041
+TXN-25029,2026-09-13,PRD-107,USB-C Charger,Electronics,West,Marketplace,3,999,100,2897,Completed,CUST-1058
+TXN-25030,2026-09-16,PRD-106,Water Bottle 750ml,Lifestyle,East,Website,1,599,0,599,Completed,CUST-1075
+TXN-25031,2026-09-19,PRD-105,Planner Notebook,Stationery,South,Mobile App,2,349,25,673,Refunded,CUST-1005
+TXN-25032,2026-09-22,PRD-104,Wireless Mouse,Electronics,North,Marketplace,3,799,50,2347,Cancelled,CUST-1022
+TXN-25033,2026-09-25,PRD-103,Steel Lunch Box,Kitchen,West,Website,1,899,75,824,Processing,CUST-1039
+TXN-25034,2026-09-28,PRD-102,Cotton Travel Tote,Lifestyle,East,Mobile App,2,699,100,1298,Completed,CUST-1056
+TXN-25035,2026-10-01,PRD-101,Ceramic Desk Lamp,Home,South,Marketplace,3,1299,0,3897,Completed,CUST-1073
+TXN-25036,2026-10-04,PRD-101,Ceramic Desk Lamp,Home,North,Website,1,1299,25,1274,Completed,CUST-1003
+TXN-25037,2026-10-07,PRD-108,Minimalist Wall Clock,Home,West,Mobile App,2,1499,50,2948,Refunded,CUST-1020
+TXN-25038,2026-10-10,PRD-107,USB-C Charger,Electronics,East,Marketplace,3,999,75,2922,Cancelled,CUST-1037
+TXN-25039,2026-10-13,PRD-106,Water Bottle 750ml,Lifestyle,South,Website,1,599,100,499,Processing,CUST-1054
+TXN-25040,2026-10-16,PRD-105,Planner Notebook,Stationery,North,Mobile App,2,349,0,698,Completed,CUST-1071
+TXN-25041,2026-10-19,PRD-104,Wireless Mouse,Electronics,West,Marketplace,3,799,25,2372,Completed,CUST-1001
+TXN-25042,2026-10-22,PRD-103,Steel Lunch Box,Kitchen,East,Website,1,899,50,849,Completed,CUST-1018
+TXN-25043,2026-10-25,PRD-102,Cotton Travel Tote,Lifestyle,South,Mobile App,2,699,75,1323,Refunded,CUST-1035
+TXN-25044,2026-10-28,PRD-101,Ceramic Desk Lamp,Home,North,Marketplace,3,1299,100,3797,Cancelled,CUST-1052
+TXN-25045,2026-10-31,PRD-101,Ceramic Desk Lamp,Home,West,Website,1,1299,0,1299,Processing,CUST-1069
+TXN-25046,2026-11-03,PRD-108,Minimalist Wall Clock,Home,East,Mobile App,2,1499,25,2973,Completed,CUST-1086
+TXN-25047,2026-11-06,PRD-107,USB-C Charger,Electronics,South,Marketplace,3,999,50,2947,Completed,CUST-1016
+TXN-25048,2026-11-09,PRD-106,Water Bottle 750ml,Lifestyle,North,Website,1,599,75,524,Completed,CUST-1033
+TXN-25049,2026-11-12,PRD-105,Planner Notebook,Stationery,West,Mobile App,2,349,100,598,Refunded,CUST-1050
+TXN-25050,2026-09-01,PRD-104,Wireless Mouse,Electronics,East,Marketplace,3,799,0,2397,Cancelled,CUST-1067
+TXN-25051,2026-09-04,PRD-103,Steel Lunch Box,Kitchen,South,Website,1,899,25,874,Processing,CUST-1084
+TXN-25052,2026-09-07,PRD-102,Cotton Travel Tote,Lifestyle,North,Mobile App,2,699,50,1348,Completed,CUST-1014
+TXN-25053,2026-09-10,PRD-101,Ceramic Desk Lamp,Home,West,Marketplace,3,1299,75,3822,Completed,CUST-1031
+TXN-25054,2026-09-13,PRD-101,Ceramic Desk Lamp,Home,East,Website,1,1299,100,1199,Completed,CUST-1048
+TXN-25055,2026-09-16,PRD-108,Minimalist Wall Clock,Home,South,Mobile App,2,1499,0,2998,Refunded,CUST-1065
+TXN-25056,2026-09-19,PRD-107,USB-C Charger,Electronics,North,Marketplace,3,999,25,2972,Cancelled,CUST-1082
+TXN-25057,2026-09-22,PRD-106,Water Bottle 750ml,Lifestyle,West,Website,1,599,50,549,Processing,CUST-1012
+TXN-25058,2026-09-25,PRD-105,Planner Notebook,Stationery,East,Mobile App,2,349,75,623,Completed,CUST-1029
+TXN-25059,2026-09-28,PRD-104,Wireless Mouse,Electronics,South,Marketplace,3,799,100,2297,Completed,CUST-1046
+TXN-25060,2026-10-01,PRD-103,Steel Lunch Box,Kitchen,North,Website,1,899,0,899,Completed,CUST-1063
+TXN-25061,2026-10-04,PRD-102,Cotton Travel Tote,Lifestyle,West,Mobile App,2,699,25,1373,Refunded,CUST-1080
+TXN-25062,2026-10-07,PRD-101,Ceramic Desk Lamp,Home,East,Marketplace,3,1299,50,3847,Cancelled,CUST-1010
+TXN-25063,2026-10-10,PRD-101,Ceramic Desk Lamp,Home,South,Website,1,1299,75,1224,Processing,CUST-1027
+TXN-25064,2026-10-13,PRD-108,Minimalist Wall Clock,Home,North,Mobile App,2,1499,100,2898,Completed,CUST-1044
+TXN-25065,2026-10-16,PRD-107,USB-C Charger,Electronics,West,Marketplace,3,999,0,2997,Completed,CUST-1061
+TXN-25066,2026-10-19,PRD-106,Water Bottle 750ml,Lifestyle,East,Website,1,599,25,574,Completed,CUST-1078
+TXN-25067,2026-10-22,PRD-105,Planner Notebook,Stationery,South,Mobile App,2,349,50,648,Refunded,CUST-1008
+TXN-25068,2026-10-25,PRD-104,Wireless Mouse,Electronics,North,Marketplace,3,799,75,2322,Cancelled,CUST-1025
+TXN-25069,2026-10-28,PRD-103,Steel Lunch Box,Kitchen,West,Website,1,899,100,799,Processing,CUST-1042
+TXN-25070,2026-10-31,PRD-102,Cotton Travel Tote,Lifestyle,East,Mobile App,2,699,0,1398,Completed,CUST-1059
+TXN-25071,2026-11-03,PRD-101,Ceramic Desk Lamp,Home,South,Marketplace,3,1299,25,3872,Completed,CUST-1076
+TXN-25072,2026-11-06,PRD-101,Ceramic Desk Lamp,Home,North,Website,1,1299,50,1249,Completed,CUST-1006
+TXN-25073,2026-11-09,PRD-108,Minimalist Wall Clock,Home,West,Mobile App,2,1499,75,2923,Refunded,CUST-1023
+TXN-25074,2026-11-12,PRD-107,USB-C Charger,Electronics,East,Marketplace,3,999,100,2897,Cancelled,CUST-1040
+TXN-25075,2026-09-01,PRD-106,Water Bottle 750ml,Lifestyle,South,Website,1,599,0,599,Processing,CUST-1057
+TXN-25076,2026-09-04,PRD-105,Planner Notebook,Stationery,North,Mobile App,2,349,25,673,Completed,CUST-1074
+TXN-25077,2026-09-07,PRD-104,Wireless Mouse,Electronics,West,Marketplace,3,799,50,2347,Completed,CUST-1004
+TXN-25078,2026-09-10,PRD-103,Steel Lunch Box,Kitchen,East,Website,1,899,75,824,Completed,CUST-1021
+TXN-25079,2026-09-13,PRD-102,Cotton Travel Tote,Lifestyle,South,Mobile App,2,699,100,1298,Refunded,CUST-1038
+TXN-25080,2026-09-16,PRD-101,Ceramic Desk Lamp,Home,North,Marketplace,3,1299,0,3897,Cancelled,CUST-1055
+TXN-25081,2026-09-19,PRD-101,Ceramic Desk Lamp,Home,West,Website,1,1299,25,1274,Processing,CUST-1072
+TXN-25082,2026-09-22,PRD-108,Minimalist Wall Clock,Home,East,Mobile App,2,1499,50,2948,Completed,CUST-1002
+TXN-25083,2026-09-25,PRD-107,USB-C Charger,Electronics,South,Marketplace,3,999,75,2922,Completed,CUST-1019
+TXN-25084,2026-09-28,PRD-106,Water Bottle 750ml,Lifestyle,North,Website,1,599,100,499,Completed,CUST-1036
+TXN-25085,2026-10-01,PRD-105,Planner Notebook,Stationery,West,Mobile App,2,349,0,698,Refunded,CUST-1053
+TXN-25086,2026-10-04,PRD-104,Wireless Mouse,Electronics,East,Marketplace,3,799,25,2372,Cancelled,CUST-1070
+TXN-25087,2026-10-07,PRD-103,Steel Lunch Box,Kitchen,South,Website,1,899,50,849,Processing,CUST-1000
+TXN-25088,2026-10-10,PRD-102,Cotton Travel Tote,Lifestyle,North,Mobile App,2,699,75,1323,Completed,CUST-1017
+TXN-25089,2026-10-13,PRD-101,Ceramic Desk Lamp,Home,West,Marketplace,3,1299,100,3797,Completed,CUST-1034
+TXN-25090,2026-10-16,PRD-101,Ceramic Desk Lamp,Home,East,Website,1,1299,0,1299,Completed,CUST-1051
+TXN-25091,2026-10-19,PRD-108,Minimalist Wall Clock,Home,South,Mobile App,2,1499,25,2973,Refunded,CUST-1068
+TXN-25092,2026-10-22,PRD-107,USB-C Charger,Electronics,North,Marketplace,3,999,50,2947,Cancelled,CUST-1085
+TXN-25093,2026-10-25,PRD-106,Water Bottle 750ml,Lifestyle,West,Website,1,599,75,524,Processing,CUST-1015
+TXN-25094,2026-10-28,PRD-105,Planner Notebook,Stationery,East,Mobile App,2,349,100,598,Completed,CUST-1032
+TXN-25095,2026-10-31,PRD-104,Wireless Mouse,Electronics,South,Marketplace,3,799,0,2397,Completed,CUST-1049
+TXN-25096,2026-11-03,PRD-103,Steel Lunch Box,Kitchen,North,Website,1,899,25,874,Completed,CUST-1066
+TXN-25097,2026-11-06,PRD-102,Cotton Travel Tote,Lifestyle,West,Mobile App,2,699,50,1348,Refunded,CUST-1083
+TXN-25098,2026-11-09,PRD-101,Ceramic Desk Lamp,Home,East,Marketplace,3,1299,75,3822,Cancelled,CUST-1013
+TXN-25099,2026-11-12,PRD-101,Ceramic Desk Lamp,Home,South,Website,1,1299,100,1199,Processing,CUST-1030
+TXN-25100,2026-09-01,PRD-108,Minimalist Wall Clock,Home,North,Mobile App,2,1499,0,2998,Completed,CUST-1047
+TXN-25101,2026-09-04,PRD-107,USB-C Charger,Electronics,West,Marketplace,3,999,25,2972,Completed,CUST-1064
+TXN-25102,2026-09-07,PRD-106,Water Bottle 750ml,Lifestyle,East,Website,1,599,50,549,Completed,CUST-1081
+TXN-25103,2026-09-10,PRD-105,Planner Notebook,Stationery,South,Mobile App,2,349,75,623,Refunded,CUST-1011
+TXN-25104,2026-09-13,PRD-104,Wireless Mouse,Electronics,North,Marketplace,3,799,100,2297,Cancelled,CUST-1028
+TXN-25105,2026-09-16,PRD-103,Steel Lunch Box,Kitchen,West,Website,1,899,0,899,Processing,CUST-1045
+TXN-25106,2026-09-19,PRD-102,Cotton Travel Tote,Lifestyle,East,Mobile App,2,699,25,1373,Completed,CUST-1062
+TXN-25107,2026-09-22,PRD-101,Ceramic Desk Lamp,Home,South,Marketplace,3,1299,50,3847,Completed,CUST-1079
+TXN-25108,2026-09-25,PRD-101,Ceramic Desk Lamp,Home,North,Website,1,1299,75,1224,Completed,CUST-1009
+TXN-25109,2026-09-28,PRD-108,Minimalist Wall Clock,Home,West,Mobile App,2,1499,100,2898,Refunded,CUST-1026
+TXN-25110,2026-10-01,PRD-107,USB-C Charger,Electronics,East,Marketplace,3,999,0,2997,Cancelled,CUST-1043
+TXN-25111,2026-10-04,PRD-106,Water Bottle 750ml,Lifestyle,South,Website,1,599,25,574,Processing,CUST-1060
+TXN-25112,2026-10-07,PRD-105,Planner Notebook,Stationery,North,Mobile App,2,349,50,648,Completed,CUST-1077
+TXN-25113,2026-10-10,PRD-104,Wireless Mouse,Electronics,West,Marketplace,3,799,75,2322,Completed,CUST-1007
+TXN-25114,2026-10-13,PRD-103,Steel Lunch Box,Kitchen,East,Website,1,899,100,799,Completed,CUST-1024
+TXN-25115,2026-10-16,PRD-102,Cotton Travel Tote,Lifestyle,South,Mobile App,2,699,0,1398,Refunded,CUST-1041
+TXN-25116,2026-10-19,PRD-101,Ceramic Desk Lamp,Home,North,Marketplace,3,1299,25,3872,Cancelled,CUST-1058
+TXN-25117,2026-10-22,PRD-101,Ceramic Desk Lamp,Home,West,Website,1,1299,50,1249,Processing,CUST-1075
+TXN-25118,2026-10-25,PRD-108,Minimalist Wall Clock,Home,East,Mobile App,2,1499,75,2923,Completed,CUST-1005
+TXN-25119,2026-10-28,PRD-107,USB-C Charger,Electronics,South,Marketplace,3,999,100,2897,Completed,CUST-1022
+TXN-25120,2026-10-31,PRD-106,Water Bottle 750ml,Lifestyle,North,Website,1,599,0,599,Completed,CUST-1039

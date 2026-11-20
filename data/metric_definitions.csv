@@ -1,0 +1,6 @@
+metric_id,display_name,definition,format,scope
+gross_sales,Gross sales,Sum(quantity × unit_price_inr) for Completed orders,INR,Filtered Completed transactions
+net_revenue,Net revenue,Sum(net_amount_inr) for Completed orders,INR,Filtered Completed transactions
+orders,Completed orders,Count of transactions where status = Completed,Integer,Filtered Completed transactions
+average_order_value,Average order value,Net revenue / completed orders; display 0 if none,INR,Filtered Completed transactions
+refunds,Refunded orders,Count of transactions where status = Refunded,Integer,Filtered transactions

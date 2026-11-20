@@ -1,0 +1,42 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 56px 16px 48px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  color: #9aa9bd;
+}
+
+.title {
+  margin: 16px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.body {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+}
+
+.button {
+  margin-top: 20px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--radius-field);
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}

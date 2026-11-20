@@ -1,0 +1,13 @@
+
+> prime-ecommerce-dashboard@0.1.0 build
+> vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 52 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.64 kB │ gzip:  0.38 kB
+dist/assets/index-C8aeEoJo.css   11.05 kB │ gzip:  3.24 kB
+dist/assets/index-Bbm1pR9i.js   188.79 kB │ gzip: 53.54 kB
+✓ built in 250ms

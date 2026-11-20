@@ -1,0 +1,153 @@
+.sidebar {
+  width: 244px;
+  flex-shrink: 0;
+  background: var(--navy);
+  color: var(--white);
+  padding: 34px 16px;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 0 12px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+
+.mark {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.menuButton {
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 34px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 11px;
+}
+
+.nav a {
+  display: block;
+  padding: 13px 27px;
+  border-radius: 10px;
+  color: #bfcde4;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--white);
+}
+
+.nav a.active {
+  background: var(--blue-active);
+  color: var(--white);
+}
+
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .nav a {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    width: 100%;
+    min-height: 0;
+    padding: 14px 18px;
+    position: static;
+  }
+
+  .brandRow {
+    padding: 0;
+    min-height: 48px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+  }
+
+  .burger,
+  .burger::before,
+  .burger::after {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  .burger::before {
+    top: -6px;
+  }
+
+  .burger::after {
+    top: 6px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .navOpen {
+    display: block;
+  }
+
+  .nav ul {
+    margin-top: 12px;
+    gap: 4px;
+  }
+
+  .nav a {
+    padding: 11px 14px;
+    font-size: 16px;
+  }
+}

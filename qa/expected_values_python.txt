@@ -1,0 +1,9 @@
+Independent check of dashboard figures from src/transactions.json (Python 3.15.2 )
+All rows: {'net': 110680, 'orders': 60, 'avg': 1845, 'refunds': 20, 'rows': 120}
+Region East: {'net': 26570, 'orders': 20, 'avg': 1328, 'refunds': 0, 'rows': 30}
+Status Refunded: {'net': 0, 'orders': 0, 'avg': 0, 'refunds': 20, 'rows': 20}
+Search 'lamp' + North + Completed: {'net': 3747, 'orders': 3, 'avg': 1249, 'refunds': 0, 'rows': 3}
+Search 'txn-25005': ['TXN-25005']
+Search 'wireless mouse' count: 13
+Search 'cust-1017': ['TXN-25001', 'TXN-25088']
+Min/max amount: 499 3897

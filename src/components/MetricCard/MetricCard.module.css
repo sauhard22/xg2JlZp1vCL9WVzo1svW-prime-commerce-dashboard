@@ -1,0 +1,55 @@
+.card {
+  background: var(--white);
+  border-radius: 17px;
+  padding: 24px 20px 22px;
+  min-width: 0;
+}
+
+.label {
+  margin: 0;
+  color: #55677f;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.value {
+  margin: 26px 0 0;
+  color: #1c3252;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  margin: 12px 0 0;
+  color: #087a5b;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .value {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .value {
+    margin-top: 18px;
+    font-size: 22px;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+}

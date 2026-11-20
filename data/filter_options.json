@@ -1,0 +1,30 @@
+{
+  "regions": [
+    "North",
+    "South",
+    "East",
+    "West"
+  ],
+  "channels": [
+    "Website",
+    "Mobile App",
+    "Marketplace"
+  ],
+  "statuses": [
+    "Completed",
+    "Processing",
+    "Cancelled",
+    "Refunded"
+  ],
+  "default_date_range": "All dates",
+  "default_sort": {
+    "column": "order_date",
+    "direction": "desc"
+  },
+  "search_columns": [
+    "transaction_id",
+    "product_name",
+    "customer_ref"
+  ],
+  "currency": "INR"
+}
