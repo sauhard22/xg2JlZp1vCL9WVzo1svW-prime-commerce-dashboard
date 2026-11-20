@@ -3,7 +3,7 @@
 > vitest run
 
 
- RUN  v2.1.9 /Users/sauhardsrivastava/Desktop/EndTech Ventures/SkillNexa/SkillNexa Project 4/WORK/prime-commerce-dashboard
+ RUN  v2.1.9 <project root>
 
  ✓ src/lib/transactions.test.js (18 tests) 3ms
 
