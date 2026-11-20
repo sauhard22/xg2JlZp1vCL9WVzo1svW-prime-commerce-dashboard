@@ -4,10 +4,10 @@ import styles from './TransactionFilters.module.css';
 const SORT_OPTIONS = [
   { value: 'order_date:desc', label: 'Newest first' },
   { value: 'order_date:asc', label: 'Oldest first' },
-  { value: 'net_amount_inr:desc', label: 'Amount: high to low' },
-  { value: 'net_amount_inr:asc', label: 'Amount: low to high' },
-  { value: 'transaction_id:asc', label: 'Transaction ID: A–Z' },
-  { value: 'transaction_id:desc', label: 'Transaction ID: Z–A' },
+  { value: 'net_amount_inr:desc', label: 'Highest amount' },
+  { value: 'net_amount_inr:asc', label: 'Lowest amount' },
+  { value: 'transaction_id:asc', label: 'ID: A–Z' },
+  { value: 'transaction_id:desc', label: 'ID: Z–A' },
 ];
 
 /**

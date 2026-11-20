@@ -3,7 +3,9 @@
 Job ID `xg2JlZp1vCL9WVzo1svW`. This report records only checks that were actually run. Anything not yet done is marked **TO DO**.
 
 Test date: 2026-11-21 (IST). Machine: macOS (Darwin 25.6, Apple Silicon), Node 26.12.0, npm 11.20.0.
-Build tested: `npm run build`, served with `npm run preview` (Vite production preview on localhost).
+Builds tested:
+- `npm run build`, served with `npm run preview` (Vite production preview on localhost)
+- The live deployment at **https://prime-commerce-dashboard.vercel.app** (Vercel production)
 
 ## 1. Automated checks
 
@@ -42,6 +44,25 @@ Run in Chrome 157 (the Chromium-based browser pane in the Claude desktop app) ag
 
 Transaction ID sort was also checked: ascending starts at TXN-25001 and the unit test confirms it ends at TXN-25120.
 
+## 2b. Checks on the live deployment
+
+Run in Chrome 157 (Claude desktop app browser pane) on https://prime-commerce-dashboard.vercel.app after the final deploy:
+
+| Check | Observed |
+|---|---|
+| Initial KPIs | ₹ 1,10,680 · 60 · ₹ 1,845 · 20; "Showing 1–10 of 120 transactions" |
+| Search `TXN-25005` | 1 row; cards ₹ 2,397 · 1 · ₹ 2,397 · 0 |
+| `lamp` + North + Completed | 3 rows; cards ₹ 3,747 · 3 · ₹ 1,249 · 0 |
+| No-match search | Empty state shown, cards all zero |
+| Clear filters | 120 rows and original KPIs restored |
+| Amount sort | ₹ 499, 499, 524 … ascending, then ₹ 3,897, 3,897, 3,872 … descending |
+| Overflow | None at 1440, 768 and 390 (scrollWidth = innerWidth) |
+| Console | No messages |
+
+Screenshots: [390](qa/deployed_chrome_390px.jpg), [768](qa/deployed_chrome_768px.jpg), [1440](qa/deployed_chrome_1440px.jpg).
+
+The first live check found the mobile Sort dropdown cutting off "Amount: high to low" at 390px. The options were shortened ("Highest amount", "Lowest amount", "ID: A–Z" …) and the site redeployed. The screenshots above show the fixed build.
+
 ## 3. Viewport checks
 
 Each check compares `document.documentElement.scrollWidth` with `innerWidth` at the emulated size.
@@ -52,8 +73,8 @@ Each check compares `document.documentElement.scrollWidth` with `innerWidth` at 
 | Chrome 157 | 1024 × 900 | None (1024 = 1024) | Sidebar, 2 KPI columns, table fits | — |
 | Chrome 157 | 768 × 1024 | None (768 = 768) | Top bar, 2 KPI columns, table fits (inner overflow 0) | [qa/chrome_768px.jpg](qa/chrome_768px.jpg) |
 | Chrome 157 | 390 × 844 | None (390 = 390) | Top bar, 2 KPI columns, row cards, Sort dropdown | [qa/chrome_390px.jpg](qa/chrome_390px.jpg) |
-| Firefox | 390 / 768 / 1440 | **TO DO** (Firefox isn't installed on the build machine) | | |
-| Edge | 390 / 768 / 1440 | **TO DO** (Edge isn't installed on the build machine) | | |
+| Firefox | 390 / 768 / 1440 | **TO DO**: Firefox isn't installed on the build machine. Check the live URL in Firefox's Responsive Design Mode | | |
+| Edge | 390 / 768 / 1440 | **TO DO**: Edge isn't installed on the build machine. Check the live URL in Edge DevTools device mode | | |
 
 A bug found and fixed during testing: at 768px the first version kept the sidebar, and the table overflowed by 94px. The layout now switches to the compact top bar below 1024px. The table wrapper also has `overflow-x: auto` as a fallback.
 
@@ -63,8 +84,9 @@ A bug found and fixed during testing: at 768px the first version kept the sideba
 |---|---|---|---|---|---|---|---|
 | `http://localhost:4174/` (local preview) | Mobile (default throttling) | **100** | 100 | 100 | 100 | 2026-11-20T22:47:06Z | [html](qa/lighthouse_local_preview.report.html) |
 | `http://localhost:4174/` (local preview) | Desktop preset | **100** | 100 | 100 | 100 | 2026-11-20T22:47:16Z | [html](qa/lighthouse_local_preview_desktop.report.html) |
-| Deployed HTTPS URL | Mobile | **TO DO** | | | | | |
+| `https://prime-commerce-dashboard.vercel.app/` (Vercel) | Mobile (default throttling) | **97** | 100 | 100 | 100 | 2026-11-20T22:57:13Z | [html](qa/lighthouse_deployed.report.html) |
+| `https://prime-commerce-dashboard.vercel.app/` (Vercel) | Desktop preset | **100** | 100 | 100 | 100 | 2026-11-20T22:57:26Z | [html](qa/lighthouse_deployed_desktop.report.html) |
 
-These runs used Lighthouse 12.8.2 (CLI) with headless Chrome 157. Mobile LCP was 1.2 s, TBT 0 ms and CLS 0.
+Environment for every run: Lighthouse 12.8.2 (CLI), headless Chrome 157, macOS on Apple Silicon, home internet connection in India. Timestamps are from each report's `fetchTime`.
 
-**The local scores do not replace the required deployed-site run.** Once the site is live, run Lighthouse on the HTTPS URL and add the row above with the URL, environment and timestamp. Save the report as `qa/lighthouse_deployed.report.html`.
+Deployed mobile run: FCP 1.6 s, LCP 1.6 s, TBT 0 ms, CLS 0, Speed Index 4.4 s. **Performance 97, above the required 85.** An earlier deployment of the same code, before a one-line label change, scored 100 on mobile at 2026-11-20T22:55:48Z. That report was replaced by the run on the final build, and the gap is normal run-to-run variation.

@@ -3,7 +3,8 @@
 A responsive React admin dashboard for Prime Ecommerce Store India. It has four calculated KPI cards, a search box, Region and Status filters, a sortable transaction log, pagination, an empty state and CSV export. All figures are calculated in the browser from the 120 supplied transactions. There is no backend and no external API.
 
 - Job ID: `xg2JlZp1vCL9WVzo1svW`
-- Live preview: _add the HTTPS Vercel/Netlify URL here after deploying_
+- Live preview: https://prime-commerce-dashboard.vercel.app
+- Repository: https://github.com/sauhard22/xg2JlZp1vCL9WVzo1svW-prime-commerce-dashboard
 - QA evidence: [QA_REPORT.md](QA_REPORT.md) and the [`qa/`](qa/) folder
 
 ## Dependency versions
@@ -100,6 +101,8 @@ qa/                               Test, build, Lighthouse and screenshot evidenc
 
 The app is a static site, so any static host works.
 
+The live preview is deployed on **Vercel** (project `prime-commerce-dashboard`) with the CLI from this folder.
+
 **Vercel:** import the GitHub repo. Framework preset: Vite, build command `npm run build`, output directory `dist`. Or use the CLI:
 
 ```bash
@@ -112,4 +115,4 @@ npx vercel --prod
 npx netlify deploy --prod --dir=dist
 ```
 
-After deploying, run Lighthouse on the HTTPS URL (Chrome DevTools → Lighthouse → Mobile → Performance) and record the result in `QA_REPORT.md`.
+The Lighthouse results for the deployed URL are in `QA_REPORT.md` §4.

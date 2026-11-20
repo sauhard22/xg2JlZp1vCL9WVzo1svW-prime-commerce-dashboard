@@ -11,10 +11,10 @@ QA-09,Sort amount desc,amounts monotonically decrease,"First page ₹ 3,897, 3,8
 QA-10,Sort date,date sort toggles direction,"Date header: descending (2026-11-12 first) → click → ascending (2026-09-01 first)",QA_REPORT.md §2,Pass
 QA-11,No results,clear empty-state shown,"""zzz-nothing"" → ""No transactions match your search. Clear filters to see all orders."" with a Clear filters button; cards show zero",qa/chrome_1440px_empty_state.jpg,Pass
 QA-12,Reset filters,all records restored,"Clear filters / Reset → search empty, region and status back to All, 120 rows, original KPIs",QA_REPORT.md §2,Pass
-QA-13,390px viewport,no horizontal page scroll,"Chrome (in-app, 390×844 emulation): scrollWidth 390 = innerWidth; table shown as row cards",qa/chrome_390px.jpg,Pass (Chrome only)
-QA-14,768px viewport,cards and table usable,"Chrome (in-app, 768×1024): scrollWidth 768, cards 2 columns, full table fits (no inner overflow)",qa/chrome_768px.jpg,Pass (Chrome only)
-QA-15,1440px viewport,matches desktop reference,"Chrome (in-app, 1440×1000): 244px sidebar, 4 cards in one row, table layout as reference",qa/chrome_1440px.jpg,Pass (Chrome only)
+QA-13,390px viewport,no horizontal page scroll,"Chrome (in-app, 390×844 emulation): scrollWidth 390 = innerWidth; table shown as row cards",qa/chrome_390px.jpg,Pass (Chrome; Firefox/Edge not yet tested)
+QA-14,768px viewport,cards and table usable,"Chrome (in-app, 768×1024): scrollWidth 768, cards 2 columns, full table fits (no inner overflow)",qa/chrome_768px.jpg,Pass (Chrome; Firefox/Edge not yet tested)
+QA-15,1440px viewport,matches desktop reference,"Chrome (in-app, 1440×1000): 244px sidebar, 4 cards in one row, table layout as reference",qa/chrome_1440px.jpg,Pass (Chrome; Firefox/Edge not yet tested)
 QA-16,Keyboard access,filters and sortable headings operable,"Tab order: skip link → nav → Export → search → region → status → Transaction/Amount/Date headers → Next. Enter and Space toggle sort",QA_REPORT.md §2,Pass
-QA-17,Console clean,no warnings or errors,Chrome console empty on production preview at 390/768/1024/1440,QA_REPORT.md §2,Pass (Chrome only)
+QA-17,Console clean,no warnings or errors,Chrome console empty on production preview at 390/768/1024/1440,QA_REPORT.md §2,Pass (Chrome; Firefox/Edge not yet tested)
 QA-18,Production build,npm run build succeeds,vite 5.4.21 build: 52 modules; no warnings,qa/build-output.txt,Pass
-QA-19,Lighthouse performance,deployed performance score >=85,"Local preview only so far: Performance 100 (mobile) / 100 (desktop). Deployed-URL run still to do",qa/lighthouse_local_preview.report.html,Pending deployment
+QA-19,Lighthouse performance,deployed performance score >=85,"https://prime-commerce-dashboard.vercel.app — Lighthouse 12.8.2, headless Chrome 157: Performance 97 mobile (2026-11-20T22:57:13Z), 100 desktop (2026-11-20T22:57:26Z)",qa/lighthouse_deployed.report.html; qa/lighthouse_deployed_desktop.report.html,Pass
